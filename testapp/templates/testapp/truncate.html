@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lower</title>
 </head>
 <body>
+    {% for r in data_list %}
+    <ul>
+    <li>{{r.name|title}}</li>
+    <li>{{r.subject|title}}</li>
+    <li>{{r.dept|title}}</li>
+    <li>{{r.date|title}}</li>
+    </ul>
+    <hr>
+
+    {%endfor%}
+
 
 </body>
 </html>
